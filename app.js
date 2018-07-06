@@ -13,8 +13,7 @@ const express = require('express')
 
     // Libs
     , acl = require('./lib/acl.js')
-    , dbo = require('./lib/db.js')
-    ;
+    , dbo = require('./lib/db.js');
 
 dbo.connect(err => {
 
@@ -31,8 +30,7 @@ dbo.connect(err => {
   // Override 'remove'
   engine.registerFilter('remove', (v, arg) => {
     let arr = [],
-        arg_arr = arg.split(',')
-        ;
+        arg_arr = arg.split(',');
 
     // Remove
     for (let _arg of arg_arr) {

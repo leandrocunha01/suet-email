@@ -7,8 +7,7 @@ const Logs = require('../models/logs.js')
 
     , render = require('../lib/utils.js').render
     , smtpError = require('../lib/utils.js').getSMTPError
-    , moment = require('moment')
-    ;
+    , moment = require('moment');
 
 moment.updateLocale('en', {
     relativeTime : {

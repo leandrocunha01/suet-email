@@ -214,6 +214,7 @@ exports.dashboardData = (domain, query, fn)  => {
           pf_data.push(d.count);
         }
 
+
         data.platform = {labels: pf_labels, data: pf_data};
 
         resolve();

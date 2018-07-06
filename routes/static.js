@@ -5,7 +5,8 @@ var hook = require('../workers/hooks/index.js')
 module.exports = app => {
 
   app.get('/', (req, res) => {
-    res.render('index', render(req));
+    //res.render('index', render(req));
+    res.redirect('/dashboard');
   });
 
   app.get('/privacy', (req, res) => {
